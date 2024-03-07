@@ -62,6 +62,7 @@ classify:
     lw a0, 4(s1)
     mv a1, s3
     mv a2, s4
+    ebreak
     jal read_matrix
     mv s5, a0  # pointer to matrix of m0
 
@@ -77,6 +78,7 @@ classify:
     lw a0, 8(s1)
     mv a1, s6
     mv a2, s7
+    
     jal read_matrix
     mv s8, a0  # pointer to matrix of m1 
 
@@ -252,7 +254,7 @@ end:
     mv a0, s11
     jal free
 
-    mv a0, s2
+    mv a0, s0
 
     lw ra, 0(sp)
     lw s0, 4(sp)
