@@ -46,7 +46,6 @@ read_matrix:
     li a2, 0
     jal fopen
     li t1, -1
-    ebreak
     beq a0, t1, fopen_fail
     mv s3, a0  # file descriptor
 

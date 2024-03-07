@@ -15,7 +15,6 @@
 #   this function terminates the program with error code 57
 # =================================================================
 argmax:
-    ebreak
     li t0, 1
     blt a1, t0, exception
 

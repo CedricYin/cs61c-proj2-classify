@@ -25,15 +25,13 @@
 write_matrix:
 
     # Prologue
-    addi sp, sp, -32
+    addi sp, sp, -24
     sw ra, 0(sp)
     sw s0, 4(sp)
     sw s1, 8(sp)
     sw s2, 12(sp)
     sw s3, 16(sp)
     sw s4, 20(sp)
-    sw s5, 24(sp)
-    sw s6, 28(sp)
 
     mv s0, a0  # pointer to filename
     mv s1, a1  # pointer to matrix
@@ -115,9 +113,7 @@ write_matrix:
     lw s2, 12(sp)
     lw s3, 16(sp)
     lw s4, 20(sp)
-    lw s5, 24(sp)
-    lw s6, 28(sp)
-    addi sp, sp 32
+    addi sp, sp 24
 
 
     ret
