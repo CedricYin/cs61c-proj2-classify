@@ -77,9 +77,7 @@ read_matrix:
     lw s5, 0(s2)  # col
     mul t0, s4, s5
     slli a0, t0, 2
-    ebreak
     jal malloc
-    ebreak
     beq a0, x0, malloc_fail
     mv s6, a0  # pointer to new space
 
