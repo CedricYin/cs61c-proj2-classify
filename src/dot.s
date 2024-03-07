@@ -43,7 +43,7 @@ loop_start:
     add t2, t2, a1
     lw t1, 0(t1)
     lw t2, 0(t2)
-    ebreak
+
     mul t3, t1, t2
     add s0, s0, t3
     add s1, s1, a3
